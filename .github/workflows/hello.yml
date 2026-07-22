@@ -1,0 +1,14 @@
+name: Hello Workflow
+
+on:
+    push:
+jobs:
+ greet:
+    runs on: ubuntu latest
+    steps:
+      name: say hello
+      run: echo "สวัสดี Github Actions!"
+      name: show date
+      run: date
+      name: show machine info
+      run: test hello
